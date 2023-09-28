@@ -28,7 +28,7 @@ console.log(n1 + n3, typeof n1,  typeof n3); // tipos iguais,quanoo number,  som
 console.log(n2 + n4, typeof n2,  typeof n4);// tipo iguas, quando string, concatena
 
 
-console.log(n1 * n5, typeof n1,  typeof n5); // A instring foi convertida em (number do tipo inteiro) e por isso ouve uma soma ao inves de uma concatenação. 
+console.log(n1 * n5, typeof n1,  typeof n5); // A ·String foi convertida em (number do tipo inteiro) e por isso ouve uma soma ao inves de uma concatenação. 
 
 
 n8 = 11;

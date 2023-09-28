@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>funcoes</h1>
+
+    <script>// função são bloco de codigos reaproveitaveis
+        //Declaração de função
+        function ola() {
+            document.write("Ola mundo de funções!")
+        }
+        ola()
+
+        //expressão de função
+        const ola2 = function(){
+            console.log("Ola mundo no console do  navegador!")
+        }
+        ola2()
+
+        // arrow functions
+        const ola3 = () =>{
+            console.log("Ola mundo de arrow function!")
+        }
+        ola3()
+
+        // Retornando valores
+        function obtemDiaSemana(){
+            return new Date().getDay()
+        }
+        let dia =  obtemDiaSemana()
+
+        console.log(dia
+        )
+        //Reaproveitando funções
+
+        function somar(n1 = 0, n2 = 0){
+            // let _n1 = n1 || 0  forma de tradicional de evitar NaN quando só temos uma variável. 
+            // let _n2 = n2 || 0
+
+            // return _n1 + _n2
+
+            return n1 + n2
+        }
+
+        console.log(somar(10))
+
+        console.log(somar(2,4))
+            
+        let soma = somar(8,9) 
+        console.log(soma)
+        alert(somar(3,4))
+
+    </script>
+
+</body>
+
+</html>

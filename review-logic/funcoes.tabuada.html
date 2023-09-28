@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Funcoes - tabuada</h1>
+
+    <button onclick="mostrarTabuada()">Mostra tabuada</button>
+    <button>Limpar tabuada</button><br><br>
+    <button onclick="calcular('+')">Somar</button>
+    <button onclick="calcular('-')">Subtrair</button>
+    <button onclick="calcular('*')">Multiplicar</button>
+    <button onclick="calcular('/')">Dividir</button>
+    <p>Resultado: <span id="resultado"></span></p>
+    <div id="output"></div>
+    
+    <script>
+        // output.innerHTML = "Valor qualquer <br> pula linha"
+        //Pedir para o usuário digitar um número e depois mostrar a tabuada de  um a mil
+        
+        document.write("Saiu do loop while!  <br>")
+        const output = document.getElementById("output");
+
+        function mostrarTabuada() {
+            let numero =  prompt("Digite um número!")   
+            let valor = prompt("Digite um valor")
+            let indice = 0
+            
+            while(indice <= 1000){
+                document.write(`${numero} X ${indice} = ${(numero valor indice)}`)
+            }
+            
+                                                                            //Toda informação que vem da interface do usuário é string
+
+        }
+    </script>
+</body>
+
+</html>
