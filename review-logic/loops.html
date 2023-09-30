@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loops</title>
 </head>
+
 <body>
-    
-<script>
-    let numero = prompt("Escreva um número!") // o comando prompt cri uma caixa de dialogo como um imput no navegador
 
-    let indice = 0 // Criando a variável ndice
-    
-    while(indice <= 10){ // enquanto indice for menor que 10 execulte o document que esta dentro das chaves
-        indice++ 
-        if (indice === 5) {
-         continue
+    <script>
+        let numero = prompt(
+            "Escreva um número!") // o comando prompt cri uma caixa de dialogo como um imput no navegador
+
+        let indice = 0 // Criando a variável ndice
+
+        while (indice <= 10) { // enquanto indice for menor que 10 execulte o document que esta dentro das chaves
+            indice++
+            if (indice === 5) {
+                continue
+            }
+            document.write(`${indice} x ${numero} = ${(indice * numero)}  <br>`)
+
         }
-        document.write(`${indice} x ${numero} = ${(indice * numero)}  <br>`)
-            
-    }
-    document.write("Saiu do loop while!  <br>")
-    
-    do {
-        if(indice > 10){
-            alert("Índice maior que 10")
-            break
+        document.write("Saiu do loop while!  <br>")
+
+        do {
+            if (indice > 10) {
+                alert("Índice maior que 10")
+                break
+            }
+            document.write(`${indice} x ${numero} = ${(indice * numero)} <br>`)
+            indice++
+        } while (indice <= 10)
+
+        document.write("Saiu do loop do while!<br>")
+
+        for (let j = 0; j <= 10; j++) {
+            if (j === 5) {
+                continue
+            }
+            document.write(`${numero} X ${j}  = ${(j* numero)} <br>`)
         }
-        document.write(`${indice} x ${numero} = ${(indice * numero)} <br>`)
-        indice++ 
-    }while(indice <= 10)
-
-    document.write("Saiu do loop do while!<br>")
-
-    for(let j = 0; j <= 10; j++){
-        if (j === 5) {
-         continue
-        }
-        document.write(`${numero} X ${j}  = ${(j* numero)} <br>`)
-    }
-    document.write("Saiu do loop for! <br>")    
-
-</script>
+        document.write("Saiu do loop for! <br>")
+    </script>
 
 </body>
+
 </html>

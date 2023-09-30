@@ -13,24 +13,22 @@
     <button onclick="mostrarTabuada()">Mostra tabuada</button>
     <button onclick="LimparTabuada()">Limpar tabuada</button><br><br>
     <div id="output"></div>
-    
+
     <script>
-        // output.innerHTML = "Valor qualquer <br> pula linha"
-        //Pedir para o usuário digitar um número e depois mostrar a tabuada de  um a mil
-        
         const output = document.getElementById("output");
 
-        function mostrarTabuada() {  
+        function mostrarTabuada() {
 
-           let numero = parseFloat(prompt("Digite um número!"))
+            let numero = parseFloat(prompt("Digite um número!"))
 
-           let msg = ""
-            for (let i = 0 ; i <= 1000; i++){
+            let msg = ""
+            for (let i = 0; i <= 1000; i++) {
                 msg += `${numero} X ${i} = ${(numero * i)} <br>`
             }
             output.innerHTML = msg
         }
-        function LimparTabuada(){
+
+        function LimparTabuada() {
             output.innerHTML = ""
         }
     </script>

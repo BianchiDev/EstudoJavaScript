@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+
+<body>
+    <script>
+        let diadaSemana;
+
+        while (true) {
+            diadaSemana = parseInt(prompt("Digite o número correspondente ao dia da semana (0 a 6):"));
+
+            if (diadaSemana >= 0 && diadaSemana <= 6) {
+                break; // Sai do loop quando o número é válido
+            } else {
+                alert("Número não válido. Por favor, digite um número de 0 a 6.");
+            }
+        }
+
+        let dia = "";
+
+        switch (diadaSemana) {
+            case 0:
+                dia = "domingo";
+                break;
+            case 1:
+                dia = "segunda-feira";
+                break;
+            case 2:
+                dia = "terça-feira";
+                break;
+            case 3:
+                dia = "quarta-feira";
+                break;
+            case 4:
+                dia = "quinta-feira";
+                break;
+            case 5:
+                dia = "sexta-feira";
+                break;
+            case 6:
+                dia = "sábado";
+                break;
+        }
+
+        document.write(`<br> Hoje é ${dia}.`);
+    </script>
+
+</body>
+
+</html>
