@@ -2,6 +2,8 @@
 
 const pessoa = [{ nome: "lamare", idade: 12, email: "" }]; */
 
+//  Construa um loop que percorra todo o objeto e em seguida mostre o nome e dia a idade de cada um.
+
 const pessoas = [
   {
     nome: "bianchi",
@@ -24,22 +26,3 @@ const pessoas = [
 for (let i = 0; i < pessoas.length; i++) {
   console.log(`${pessoas[i].nome} possui ${pessoas[i].idade} anos`);
 }
-
-/* function testar() {
-  if (pessoas.idade >= 5 && pessoas.idade < 18) {
-    return "Essa pessoa é o pedro";
-  }
-  if (pessoas.idade >= 18 && pessoas.idade < 23) {
-    return "Essa pessoa e o Bianchi";
-  }
-  if (pessoas.idade >= 23 && pessoas.idade < 50) {
-    return "Essa pessoa é a irara";
-  } else {
-    return "Essa é a Juliana";
-  }
-}
-
-const idade = 5; // Altere aqui a idade que você deseja testar
-const resultado = testar();
-console.log(resultado);
- */
